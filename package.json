@@ -4,6 +4,8 @@
   "description": "",
   "main": "lib/index.js",
   "scripts": {
+    "build": "babel -d lib src",
+    "prepublish": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +17,10 @@
   "bugs": {
     "url": "https://github.com/hudson-taylor/balance-transport/issues"
   },
-  "homepage": "https://github.com/hudson-taylor/balance-transport#readme"
+  "homepage": "https://github.com/hudson-taylor/balance-transport#readme",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-plugin-add-module-exports": "^0.1.2",
+    "babel-preset-es2015": "^6.5.0"
+  }
 }
